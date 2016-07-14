@@ -151,6 +151,7 @@ module.exports = {
 
   module: {
     loaders: [
+      { test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader' },
       { test: /\.js?$/,
         loader: 'babel',
         exclude: /node_modules/ },
