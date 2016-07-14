@@ -6,7 +6,8 @@
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.js",
+    "postinstall": "webpack --config ./webpack.prod.config.js --progress --colors"
   },
   "author": "",
   "license": "ISC",
